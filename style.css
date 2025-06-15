@@ -1,0 +1,76 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: contain;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* sfondo trasparente scuro */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Countdown styling */
+#countdown {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #countdown {
+        font-size: 1.2em;
+    }
+
+    iframe {
+        height: 500px;
+    }
+}
